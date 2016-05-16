@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/start_scan_text"
+        android:textSize="22sp"
+        android:background="@android:color/holo_purple"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_above="@id/scanButton"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/display_text"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/scan_info_text"
+        android:textSize="22sp"/>
+
+        <ProgressBar
+            android:id="@+id/scan_progress"
+            android:layout_width="300dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_centerInParent="true"
+            android:background="@android:color/darker_gray"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
